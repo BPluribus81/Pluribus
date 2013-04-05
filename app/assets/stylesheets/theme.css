@@ -300,12 +300,12 @@ header {
 	display: none;
 }
 .socialicons{
-	background: url('../img/socialicons.png') no-repeat;
+	background: url('socialicons.png') no-repeat;
 	width: 265px;
 	height: 36px;
 }
 .socialicons_h{
-	background: url('../img/socialicons_h.png') no-repeat;
+	background: url('socialicons_h.png') no-repeat;
 	width: 265px;
 	height: 36px;
 }

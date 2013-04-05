@@ -30,8 +30,13 @@
                     </ul>
                 </li>
                 <li><a href="contact.html">CONTACT US</a></li>
-                <li><a class="btn-header" href="sign-up.html">Sign up</a></li>
-                <li><a class="btn-header" href="sign-in.html">Sign in</a></li>
+                <!-- <li><a class="btn-header" href="sign-up.html">Sign up</a></li> -->
+                <!-- <li><a class="btn-header" href="sign-in.html">Sign in</a></li> -->
+                <% if user_signed_in? %>
+                <li><%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %></li>
+                <% else %>
+                <li><%= link_to('LOGIN', new_user_session_path)  %></li>
+                <% end %>
             </ul>
         </div>
     </div>
