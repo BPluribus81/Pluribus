@@ -6,6 +6,9 @@ PluribusClean::Application.routes.draw do
 
   root :to => 'home#index'
 
+  match '/tou',  to: 'home#tou'
+  match '/privacy',  to: 'home#privacy'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

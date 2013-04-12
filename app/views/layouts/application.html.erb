@@ -17,23 +17,24 @@
     <link rel="stylesheet" href="assets/index.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="assets/animate.css" media="screen, projection"> -->
 
-    <!-- Sample Inline CSS
     <style media="screen" type="text/css">
-    .container {max-width: 940px;}
-    </style> -->
+    .span2 {max-width: 140px;}
+    .navbar.navbar-static-top { margin-bottom: 0;}
+    .alert { margin-bottom: 0; }
+    #footer { margin-top: 90px; }
+    #footer .credits { padding: 10px 0px 10px 0px;}
+    #footer .credits .copyright { margin-top: 10px;}
+    #footer .credits .social { margin-top: 10px; }
+    #aboutus {margin-top: 30px; margin-bottom: 0;}
+    </style>
+
 </head>
-
 <body class="pull_top">
-    
     <%= render 'layouts/navbar' %>
-
     <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <%= content_tag(:div, value, class: "alert alert-#{key}") %>
     <% end %>
-
     <%= yield %>
-
     <%= render 'layouts/footer' %>
-
 </body>
 </html>
