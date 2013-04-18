@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130414192426) do
+ActiveRecord::Schema.define(:version => 20130418152438) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",              :default => "", :null => false
@@ -27,6 +27,22 @@ ActiveRecord::Schema.define(:version => 20130414192426) do
     t.datetime "created_at",                         :null => false
     t.datetime "updated_at",                         :null => false
   end
+
+  create_table "campaigns", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "organization"
+    t.string   "address"
+    t.string   "title"
+    t.string   "description"
+    t.integer  "fundtarget"
+    t.integer  "campaignlength"
+    t.datetime "datepublished"
+    t.integer  "amountraised"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "campaigns", ["user_id"], :name => "index_campaigns_on_user_id"
 
   create_table "statics", :force => true do |t|
     t.datetime "created_at", :null => false
