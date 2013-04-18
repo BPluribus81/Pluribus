@@ -1,0 +1,15 @@
+<h1> 
+  Title: <%= @campaign.title %>
+</h1>
+<h2>
+  Organization: <%= @campaign.organization %><br />
+  Address: <%= @campaign.address %><br />
+  Fundraising Target: <%= number_to_currency(@campaign.fundtarget, precision: 0) %><br />
+  Campaign Length: <%= @campaign.campaignlength %> days<br />
+  Amount Raised To Date: <%= number_to_currency(@campaign.amountraised, precision: 0) %><br />
+  Name of Sponsor: <%= @sponsor.firstname %><br />
+</h2>
+<h3>
+  Description:<br />
+</h3>
+<p> <%= @campaign.description %></p>

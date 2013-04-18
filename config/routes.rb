@@ -1,8 +1,10 @@
 PluribusClean::Application.routes.draw do
 
-  devise_for :admins
+  get "campaigns/new"
 
+  devise_for :admins
   devise_for :users
+  resources :campaigns
 
   root :to => 'home#index'
 

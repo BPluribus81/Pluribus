@@ -150,7 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara
+  capybara (~> 2.1.0)
   coffee-rails (~> 3.2.1)
   devise (~> 2.2.3)
   jquery-rails
