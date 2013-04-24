@@ -1,0 +1,82 @@
+.span2 {
+    max-width: 140px;
+}
+
+.navbar .navbar-static-top { 
+    margin-bottom: 0;
+}
+
+.alert { 
+    margin-bottom: 0; 
+}
+
+#footer { 
+    margin-top: 90px; 
+}
+
+#footer .credits { padding: 10px 0px 10px 0px;}
+
+#footer .credits .copyright { 
+    margin-top: 10px;
+}
+
+#footer .credits .social { 
+    margin-top: 10px; 
+}
+
+#aboutus { 
+    margin-top: 30px; margin-bottom: 0;
+}
+
+#customtitlebar {
+    background: url('/assets/titlebar.jpg') no-repeat;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    height: 380px;
+    margin-top:-20px;
+    margin-bottom: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;     
+}
+
+#customtitlebarcontent {
+    margin: 0 auto; width: 960px;
+    padding:110px 0px 80px 70px;
+    word-spacing: .4em;
+}
+
+#customtitlebarcontent h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: #C0CCCB;
+    line-height: 1;
+}
+
+.campaign {
+    -moz-border-radius: 15px;
+    border: solid;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+.campaign .testbox {
+    border: solid;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+@media (max-width: 767px) {
+    #customtitlebar {background: none; height: auto;}
+}
+
+.navbar-fixed-top {
+    -webkit-box-shadow: 0 10px 5px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 10px 5px rgba(0,0,0,.3);
+    box-shadow: 0 5px 10px rgba(0,0,0,.3); 
+}
+
+.btn { word-spacing: .25em; font-size: 16px; line-height: 25px; font-weight:bold;
+}

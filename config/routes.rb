@@ -10,6 +10,7 @@ PluribusClean::Application.routes.draw do
 
   match '/tou',  to: 'home#tou'
   match '/privacy',  to: 'home#privacy'
+  match '/campaigntest', to: 'home#campaigntest'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
