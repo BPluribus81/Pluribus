@@ -2,12 +2,8 @@
     max-width: 140px;
 }
 
-.navbar .navbar-static-top { 
+.alert .navbar .navbar-static-top { 
     margin-bottom: 0;
-}
-
-.alert { 
-    margin-bottom: 0; 
 }
 
 #footer { 
@@ -60,12 +56,15 @@
     border: solid;
     border-radius: 15px;
     border-width: 1px;
+    padding: 10px;
+    display: block;
 }
 
 .campaign .testbox {
     border: solid;
     border-radius: 15px;
     border-width: 1px;
+    margin-left: 2.127659574%;
 }
 
 @media (max-width: 767px) {
@@ -73,10 +72,249 @@
 }
 
 .navbar-fixed-top {
-    -webkit-box-shadow: 0 10px 5px rgba(0,0,0,.3);
-    -moz-box-shadow: 0 10px 5px rgba(0,0,0,.3);
-    box-shadow: 0 5px 10px rgba(0,0,0,.3); 
+    -webkit-box-shadow: 0 3x 6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.3);
+    box-shadow: 0 3px 6px rgba(0,0,0,.3); 
 }
 
 .btn { word-spacing: .25em; font-size: 16px; line-height: 25px; font-weight:bold;
+}
+
+/* This is from StackOverflow re: getting spans to align horizontally */
+
+.container {
+    margin-top: 10px;
+}
+
+.vrai-row { position: relative;z-index: 101; }
+
+.faux-row { position: absolute;top: 0;left: 0;right: 0;bottom: 0;z-index: 100; }
+
+@media (max-width: 767px) {
+    .faux-row { display: none!important; }
+}
+@media (min-width: 768px) {
+    .vrai-row .well { /* Deactivate well styles */
+      background-color: transparent;
+      border-color: transparent;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none;
+    }
+}
+
+.faux-row .well {
+    height: 100%;
+}
+
+    /* The following is because .span* elements should not have paddings, margins nor borders see http://stackoverflow.com/a/11299934/1478467 */
+
+.faux-row .well,
+.vrai-row .well
+{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-fluid > .inner-fluid {
+    border: 5px none green;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+/**
+ * Solution 1 (not responsive)
+ * Any width for borders is ok.
+ * May be able to optimize by setting global style and
+ * `border-style`'ing to none (see Solution 2 for example)
+ */
+
+.row > [class*="span"]:first-child > .inner {
+    border-left: 5px solid red;
+}
+.row > [class*="span"]:last-child > .inner {
+    border-right: 5px solid red;
+}
+
+/* Testing purposes */
+
+body { margin-top: 20px; }
+.container.unpadded { margin-top: 0px; }
+.row > [class*="span"] > .inner,
+.row-fluid [class*="span"],
+.css3  [class*="span"] { background-color: blue;color: white;text-align: center; }
+
+.inner,
+.inner-fluid > [class*="span"],
+.css3  [class*="span"] { min-height: 50px;padding: 20px; }
+
+
+/* ==========================================================================
+Replace 1170px grid with 960px grid on "Large Desktops"
+========================================================================== */
+
+@media (min-width: 1200px) {
+.row {
+margin-left: -20px;
+*zoom: 1;
+}
+.row:before,
+.row:after {
+display: table;
+line-height: 0;
+content: "";
+}
+.row:after {
+clear: both;
+}
+[class*="span"] {
+float: left;
+min-height: 1px;
+margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+width: 940px;
+}
+.span12 {
+width: 940px;
+}
+.span11 {
+width: 860px;
+}
+.span10 {
+width: 780px;
+}
+.span9 {
+width: 700px;
+}
+.span8 {
+width: 620px;
+}
+.span7 {
+width: 540px;
+}
+.span6 {
+width: 460px;
+}
+.span5 {
+width: 380px;
+}
+.span4 {
+width: 300px;
+}
+.span3 {
+width: 220px;
+}
+.span2 {
+width: 140px;
+}
+.span1 {
+width: 60px;
+}
+.offset12 {
+margin-left: 980px;
+}
+.offset11 {
+margin-left: 900px;
+}
+.offset10 {
+margin-left: 820px;
+}
+.offset9 {
+margin-left: 740px;
+}
+.offset8 {
+margin-left: 660px;
+}
+.offset7 {
+margin-left: 580px;
+}
+.offset6 {
+margin-left: 500px;
+}
+.offset5 {
+margin-left: 420px;
+}
+.offset4 {
+margin-left: 340px;
+}
+.offset3 {
+margin-left: 260px;
+}
+.offset2 {
+margin-left: 180px;
+}
+.offset1 {
+margin-left: 100px;
+}
+}
+
+.aboxl {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #949494;
+    -webkit-box-shadow: 1px 1px 2px #949494;
+    box-shadow: 1px 1px 2px #949494;
+}
+
+.aboxr {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #949494;
+    -webkit-box-shadow: 1px 1px 2px #949494;
+    box-shadow: 1px 1px 2px #949494;
+}
+
+.aboxr h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.giftoption1 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #E0FFFF;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #949494;
+    -webkit-box-shadow: 1px 1px 2px #949494;
+    box-shadow: 1px 1px 2px #949494;
+}
+
+.giftoption2 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #E0FFFF;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #888888;
+    -webkit-box-shadow: 1px 1px 2px #888888;
+    box-shadow: 1px 1px 2px #888888;
+}
+
+.giftoption3 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #E0FFFF;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #888888;
+    -webkit-box-shadow: 1px 1px 2px #888888;
+    box-shadow: 1px 1px 2px #888888;
 }
