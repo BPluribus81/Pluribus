@@ -11,11 +11,12 @@
         </a>
         <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-                <!--<li><a href="index.html" class="active">Home</a></li> -->
                 <li><a href="about-us.html">About</a></li>
-                <li><a href="browse.html">Browse Projects</a></li>
+                <li><a href="browse.html">Example Campaign</a></li>
                 <li><a href="browse.html">Raise Funds</a></li>
                 <li><a href="browse.html">Help</a></li>
+
+                <!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         PAGES
@@ -31,13 +32,63 @@
                         <li><a href="sign-up.html">Sign up</a></li>
                         <li><a href="backgrounds.html">Backgrounds</a></li>
                     </ul>
-                </li>
-                <!-- <li><a class="btn-header" href="sign-up.html">Sign up</a></li> -->
-                <!-- <li><a class="btn-header" href="sign-in.html">Sign in</a></li> -->
+                </li> -->
+
                 <% if user_signed_in? %>
-                <li><%= link_to('Sign Out', destroy_user_session_path, :method => :delete) %></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        My Account
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><%= link_to('Account Details', edit_user_registration_path, :method => :post) %></li>
+                        <li><%= link_to('Sign Out', destroy_user_session_path, :method => :delete) %></li>
+                    </ul>
+                </li>
                 <% else %>
+                <li><%= link_to('Sign Up', new_user_registration_path)  %></li>
+                
+                <!--
                 <li><%= link_to('Sign In', new_user_session_path)  %></li>
+
+                <li class="dropdown" id="menu1">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Sign In (test)
+                        <b class="caret"></b>
+                    </a>
+                    <div class="dropdown-menu">
+                        <form style="margin: 0px" accept-charset="UTF-8" action="/sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+                            <fieldset class='textbox' style="padding:10px">
+                                <input style="margin-top: 8px" type="text" placeholder="Username" />
+                                <input style="margin-top: 8px" type="password" placeholder="Passsword" />
+                                <input class="btn-primary" name="commit" type="submit" value="Log In" />
+                            </fieldset>
+                        </form>
+                    </div>
+                http://mimi.kaktusteam.de/blog-posts/2012/02/login-menu-with-twitter-bootstrap/
+                http://mifsud.me/adding-dropdown-login-form-bootstraps-navbar/
+
+                </li> -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Sign In
+                        <b class="caret"></b>
+                    </a>
+                    <div class="dropdown-menu" style="padding: 10px;">
+                        <%= form_for("user", :url => user_session_path) do |f| %>
+                        <div><%= f.email_field :email, :autofocus => true %>
+                        </div>
+
+                        <div>
+                        <%= f.password_field :password %>
+                        </div>
+
+                        <div><%= f.submit "Sign in" %></div>
+                        <% end %>
+                    </div>
+                </li>
+
                 <% end %>
             </ul>
         </div>

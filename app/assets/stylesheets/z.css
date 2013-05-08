@@ -1,3 +1,7 @@
+.navbar-inverse .nav > li > a {
+    font-size: 15px;
+}
+
 .span2 {
     max-width: 140px;
 }
@@ -39,7 +43,7 @@
 }
 
 #customtitlebarcontent {
-    margin: 0 auto; width: 960px;
+    margin: 0 auto; max-width: 960px;
     padding:110px 0px 80px 70px;
     word-spacing: .4em;
 }
@@ -68,7 +72,12 @@
 }
 
 @media (max-width: 767px) {
-    #customtitlebar {background: none; height: auto;}
+  /*  #customtitlebar {background: none; height: auto;} */
+    #customtitlebarcontent h1 {font-size: 35px;}
+}
+
+@media (max-width: 979px) {
+    /* .navbar-fixed-top, .navbar-fixed-bottom { position: fixed; padding: 0 30px 0 30px;}  This doesn't quite work since the content bleeds offscreen */
 }
 
 .navbar-fixed-top {
@@ -77,51 +86,11 @@
     box-shadow: 0 3px 6px rgba(0,0,0,.3); 
 }
 
-.btn { word-spacing: .25em; font-size: 16px; line-height: 25px; font-weight:bold;
-}
-
-/* This is from StackOverflow re: getting spans to align horizontally */
-
-.container {
-    margin-top: 10px;
-}
-
-.vrai-row { position: relative;z-index: 101; }
-
-.faux-row { position: absolute;top: 0;left: 0;right: 0;bottom: 0;z-index: 100; }
-
-@media (max-width: 767px) {
-    .faux-row { display: none!important; }
-}
-@media (min-width: 768px) {
-    .vrai-row .well { /* Deactivate well styles */
-      background-color: transparent;
-      border-color: transparent;
-      -webkit-box-shadow: none;
-         -moz-box-shadow: none;
-              box-shadow: none;
-    }
-}
-
-.faux-row .well {
-    height: 100%;
-}
-
-    /* The following is because .span* elements should not have paddings, margins nor borders see http://stackoverflow.com/a/11299934/1478467 */
-
-.faux-row .well,
-.vrai-row .well
-{
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.row-fluid > .inner-fluid {
-    border: 5px none green;
-    border-left-style: solid;
-    border-right-style: solid;
+.btn { 
+    word-spacing: .25em; 
+    font-size: 16px; 
+    line-height: 25px; 
+    font-weight:bold;
 }
 
 /**
@@ -140,7 +109,6 @@
 
 /* Testing purposes */
 
-body { margin-top: 20px; }
 .container.unpadded { margin-top: 0px; }
 .row > [class*="span"] > .inner,
 .row-fluid [class*="span"],
@@ -153,11 +121,11 @@ body { margin-top: 20px; }
 
 /* ==========================================================================
 Replace 1170px grid with 960px grid on "Large Desktops"
-========================================================================== */
+========================================================================== 
 
 @media (min-width: 1200px) {
 .row {
-margin-left: -20px;
+/* margin-left: -20px;   What does this do? 
 *zoom: 1;
 }
 .row:before,
@@ -252,27 +220,47 @@ margin-left: 180px;
 .offset1 {
 margin-left: 100px;
 }
+} */
+
+.cheaderbox {
+    margin-top: 20px;
+    /* max-width: 940px;*/
+    margin-bottom: 15px;
+    padding: 5px 15px 1px 15px;
+    background-color: white;
+    border-bottom-color: black
+    border-bottom: 5px;
+    /*-webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 1px 2px #949494;
+    -webkit-box-shadow: 1px 1px 2px #949494;
+    box-shadow: 1px 1px 2px #949494;*/
+}
+
+.cheader {
+    background-color: white;
 }
 
 .aboxl {
     margin-bottom: 20px;
     padding: 15px;
     background-color: white;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius:2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     -moz-box-shadow: 1px 1px 2px #949494;
     -webkit-box-shadow: 1px 1px 2px #949494;
     box-shadow: 1px 1px 2px #949494;
 }
 
-.aboxr {
-    margin-bottom: 20px;
+.aboxr, .ownerbox, .perkbox {
+    margin-bottom: 15px;
     padding: 15px;
     background-color: white;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius:2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     -moz-box-shadow: 1px 1px 2px #949494;
     -webkit-box-shadow: 1px 1px 2px #949494;
     box-shadow: 1px 1px 2px #949494;
@@ -283,38 +271,66 @@ margin-left: 100px;
     -webkit-margin-after: 0;
 }
 
-.giftoption1 {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #E0FFFF;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -moz-box-shadow: 1px 1px 2px #949494;
-    -webkit-box-shadow: 1px 1px 2px #949494;
-    box-shadow: 1px 1px 2px #949494;
+.ownerbox {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
-.giftoption2 {
-    margin-bottom: 20px;
-    padding: 15px;
+.perkbox {
     background-color: #E0FFFF;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -moz-box-shadow: 1px 1px 2px #888888;
-    -webkit-box-shadow: 1px 1px 2px #888888;
-    box-shadow: 1px 1px 2px #888888;
 }
 
-.giftoption3 {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #E0FFFF;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -moz-box-shadow: 1px 1px 2px #888888;
-    -webkit-box-shadow: 1px 1px 2px #888888;
-    box-shadow: 1px 1px 2px #888888;
+.perkbox h4 {
+    padding-bottom: 5px;
+    border-bottom:1px solid #888888;
+}
+
+.loc {
+    text-align:right;
+}
+
+.sponsororg {
+    text-alight: left;
+}
+
+.social-tools {
+    display: block;
+    /* position: fixed; */
+    margin-top 90px;
+    height: auto;
+    /* top: 90px; */
+    text-align: center;
+    border-radius: 0;
+    width: 20px;
+    background-color: transparent;
+    max-width: 20px;
+    color: navy;
+    bottom: 50px;
+}
+
+.social-tools .unit {
+    text-align: center;
+}
+
+.social-tools p {
+    font-size:65%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.tribar {
+    text-align: center;
+    margin: 15px 10px 15px 10px;
+}
+
+.tribar i {
+    font-size: 40px;
+}
+
+.tribar h2 {
+    magin-top: 0;
 }
