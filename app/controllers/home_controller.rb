@@ -7,4 +7,10 @@ class HomeController < ApplicationController
 
   def privacy
   end
+
+  def raise
+  end
+
+  def about
+  end
 end
