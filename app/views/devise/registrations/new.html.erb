@@ -1,22 +1,53 @@
-<div class="container">
 <br /><br /><br />
+<div id="sign_up1">
+    <div class="container">
+        <div class="row">
+            <div class="span12 header">
+                <h4>Create your new account</h4>
+                <p>
+                    Thank you for taking a few seconds to create a new username and password</p>
 
-<h2>Sign up</h2>
+                <!-- 
+                <div class="span4 social">
+                    <a href="#" class="circle facebook">
+                        <img src="../assets/face.png" alt="">
+                    </a>
+                     <a href="#" class="circle twitter">
+                        <img src="../assets/twt.png" alt="">
+                    </a>
+                     <a href="#" class="circle gplus">
+                        <img src="../assets/gplus.png" alt="">
+                    </a>
+                </div> -->
+            </div> 
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+            <!--
+            <div class="span3 division">
+                <div class="line l"></div>
+                <span>or</span>
+                <div class="line r"></div>
+            </div>  -->
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+            <div class="span12 footer">
+                <form>
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <input type="submit" placeholder="Confirm Password" value="sign up">
+                </form>
+            </div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+            <!-- <div class="span5 remember">
+                <label class="checkbox">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div> -->
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+            <div class="span12 dosnt">
+                <span>Already have an account?</span>
+                <a href="sign-in.html">Sign in</a><br />
+            </div>
+        </div>
+    </div>
 </div>

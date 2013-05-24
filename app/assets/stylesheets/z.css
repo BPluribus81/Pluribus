@@ -1,9 +1,17 @@
+.navbar.navbar-inverse .navbar-inner {
+    padding: 5px 0px 0px 0px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
 #features {
     margin-top: 40px;
 }
 
 .navbar-inverse .nav > li > a {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .span2 {
@@ -15,7 +23,8 @@
 }
 
 #footer { 
-    margin-top: 90px; 
+    margin-top: 0px;
+    padding-top: 5px;
 }
 
 #footer .credits { padding: 10px 0px 10px 0px;}
@@ -28,8 +37,14 @@
     margin-top: 10px; 
 }
 
+#footer .footer_header {
+    margin-bottom: 20px;
+}
+
+#footer .container {margin-top: 0px;}
+
 #aboutus { 
-    margin-top: 30px; margin-bottom: 0;
+    margin-top: 30px; margin-bottom: 20px;
 }
 
 #customtitlebar {
@@ -54,7 +69,7 @@
 
 #customtitlebarcontent h1 {
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 40px;
     color: #C0CCCB;
     line-height: 1;
 }
@@ -337,4 +352,165 @@ margin-left: 100px;
 
 .tribar h2 {
     magin-top: 0;
+}
+
+/* Sign Up Option 1 */
+#sign_up1{
+    background: url("../assets/ocean.jpg")  no-repeat;
+    display: block;
+    /* height: 540px; */
+    /* margin-bottom: 90px; */
+    margin-top: -35px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#sign_up1 .header{
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    margin-top: 85px;
+    padding-left: 20px;
+}
+#sign_up1 .header h4{
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 38px;
+    font-weight: 300;
+    text-shadow: 1px 1px 0px #143C4E;
+}
+#sign_up1 .header p{
+    font-style: italic;
+    font-size: 17px;
+    margin: 0 0 40px 0;
+}
+#sign_up1 .header .social{
+    margin: 0 auto 28px;
+    float: none;
+    text-align: center;
+}
+#sign_up1 .header .social a.circle{
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-right: 25px;
+    display: inline-block;
+    -webkit-transition: border-color ease-in .1s;
+    -moz-transition: border-color ease-in .1s;
+    -o-transition: border-color ease-in .1s;
+    transition: border-color ease-in .1s;
+}
+#sign_up1 .header .social a.circle img{
+    display: inline-block;
+    margin-top: 15px;
+}
+#sign_up1 .header .social a.facebook{
+    border:2px solid #233678;
+    background: #233678;
+}
+#sign_up1 .header .social a.twitter{
+    border:2px solid #54AEE1;
+    background: #54AEE1;
+}
+#sign_up1 .header .social a.gplus{
+    border:2px solid #292929;
+    background: #292929;
+    margin: 0;
+}
+#sign_up1 .header .social a.circle:hover{
+    border-color: rgb(255, 255, 255);
+}
+#sign_up1 .division{
+    margin: 0 auto 50px;
+    float: none;
+    left: -6px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+#sign_up1 .division .line{
+    border-top: 1px solid rgb(104, 167, 196);
+    width: 34%;
+    top: 10px;
+    position: absolute;
+}
+#sign_up1 .division .l{
+    left: 0;
+}
+#sign_up1 .division .r{
+    right: 0;
+}
+#sign_up1 .division span{
+    color: #fff;
+    font-size: 17px;
+}
+#sign_up1 .footer form{
+    margin: 0 0 46px 0;
+}
+#sign_up1 .footer input[type="text"],
+#sign_up1 .footer input[type="password"] {
+    border-radius: 3px;
+    font-size: 16px;
+    height: 25px;
+    margin: 0 10px 0px 0;
+    color: black;
+    width: 27%;
+}
+#sign_up1 .footer input[type="submit"]{
+    text-transform: uppercase;
+    color: #fff;
+    background: #187CCC;
+    font-size: 15px;
+    padding: 8px 18px;
+    border: 0 none;
+    border-radius: 3px;
+    -webkit-transition: background linear .2s, box-shadow linear .2s;
+    -moz-transition: background linear .2s, box-shadow linear .2s;
+    -o-transition: background linear .2s, box-shadow linear .2s;
+    transition: background linear .2s, box-shadow linear .2s;
+}
+#sign_up1 .footer input[type="submit"]:hover{
+    background: #252528;
+}
+#sign_up1 .remember label.checkbox{
+    float: left;
+    font-weight: bold;
+    width: 30%;
+    font-size: 14px;
+    color: #fff;
+}
+#sign_up1 .remember a{
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+#sign_up1 .dosnt{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+#sign_up1 .dosnt span{
+    margin-right: 8px;
+}
+#sign_up1 .dosnt a{
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+#sign_up1 .dosnt a:hover,
+#sign_up1 .remember a:hover{
+    color:#252528;
+    border-color: #252528;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.navbar-inverse .brand {
+    font-size: 23px;
 }

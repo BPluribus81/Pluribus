@@ -3,12 +3,27 @@
 <br />
 <br />
 <div class="container">
-  <h2>About Us</h2>
+  <h2>About Pluribus</h2>
   <br />
-  <p>This is where I'll describe the company.</p><br />
-
-  Map of projects:<br />
-
-  <iframe src="http://mapsengine.google.com/map/u/1/view?mid=zQiw1JtvoOUQ.k23a0l6u6tY0" width="640" height="480"></iframe>
-
-</div>
+  <p>Pluribus is a Crowdfunding Portal designed to fund investments in local projects that strengthen and enrich our local communities. In addition to serving as a funding portal, Pluribus serves as a platform to connect individuals with local organizations , businesses, social causes and creative projects in their community.</p>
+  <h3>Why Community Funding?</h3>
+  <p>Other crowdfunding sites have served as a terrific source of funding for many worthy creative projects, but the majority of projects hosted on these sites fail to raise the desired funds and then may not be held accountable once they receive funding as they are far removed from the people who originally funded them. Community-based crowdfunding serves to mitigate these challenges in two important ways:</p>
+  <ul>
+    <li>Tapping in to existing community networks: Pluribus empowers projects to tap into local communities and social networks and then build upon these networks to expand their reach beyond these groups through the Pluribus Crowdfunding Portal.</li>
+    <li>Community Involvement: Projects funded by Pluribus give local funders the opportunity to meet project sponsors directly through events such as town-hall meetings or project kick-offs. By gaining the opportunity to meet and discuss the proposed projects with their sponsors can help ensure that the funder's investment is being appropriately used.</li>
+  </ul><br />
+  <h3>How to Get Involved</h3>
+  <ul>
+    <li>Start a Campaign: We are looking for high quality campaigns that will fund new exciting projects, organizations and businesses in the area. Think you've got a good idea? Contact us so we can work with you to get your project posted and raising funds.</li>
+    <li>Get Involved: Looking to get involved in an existing project? Projects not only need funds, but also skills such as programming, legal, engineering, and marketing among many, many others. For all of our projects, you can contact the project organizer directly to get involved any way you can to make these projects a success.</li>
+  </ul><br />
+  <h3>Map of Sample Projects</h3>
+  <p>We believe that the possibilities for community-based crowdfunding are as diverse as the communities in which we live. From projects as diverse as the arts, real estate investment, small business, charity and non-profits, Pluribus aims to be a vehicle for investing in all aspects of our communities</p><br />
+  <p><strong>Click on the icons in the map below to see some of the many project ideas we hope to fund in the future:</strong></p>
+  <br />
+  <center>
+    <%= gmaps( :kml => {:data => '[{ url: "http://bramira.com/kdata.kml"}]'}, 
+      :map_options => {"center_latitude" => 0, "center_longitude" => 180, "auto_adjust" => true, :raw => '{ disableDefaultUI: true, scrollwheel: false }'}
+      ) %> 
+    </center><br /><br />
+  </div>
