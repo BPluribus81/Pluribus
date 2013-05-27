@@ -9,7 +9,7 @@ PluribusClean::Application.routes.draw do
   root :to => 'home#index'
 
   match '/about', to: 'home#about'
-  match '/raise', to: 'home#raise'
+  match '/raise', to: 'home#raisefunds'
   match '/tou',  to: 'home#tou'
   match '/privacy',  to: 'home#privacy'
   match '/campaigntest', to: 'home#campaigntest'

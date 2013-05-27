@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   def privacy
   end
 
-  def raise
+  def raisefunds
   end
 
   def about
