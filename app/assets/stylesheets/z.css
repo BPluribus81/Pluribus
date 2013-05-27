@@ -1,5 +1,36 @@
+.social-tools {
+    display: block;
+    min-width: 70px;
+    margin-top: 47px;
+    padding: 5px 0 5px 0;
+    /*position: absolute;*/
+    height: auto;
+    background-color: white;
+    bottom: 50px;
+    -webkit-border-radius:6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.campaignrightbar {
+    margin-left: 10px;
+    padding-top: 38px;
+}
+
+.nav-tabs {
+    margin-bottom: 0px;
+}
+
+.nav-tabs ul {
+    margin-bottom: 0px;
+}
+
 .navbar.navbar-inverse .navbar-inner {
     padding: 5px 0px 0px 0px;
+}
+
+.testborder {
+    margin-right: 1px;
 }
 
 li {
@@ -244,9 +275,9 @@ margin-left: 100px;
 .cheaderbox {
     margin-top: 20px;
     /* max-width: 940px;*/
-    margin-bottom: 15px;
-    padding: 5px 15px 1px 15px;
-    background-color: white;
+    margin-bottom: 5px;
+    /*padding: 5px 15px 1px 15px;*/
+    /*background-color: white;*/
     border-bottom-color: black
     border-bottom: 5px;
     /*-webkit-border-radius:6px;
@@ -257,17 +288,18 @@ margin-left: 100px;
     box-shadow: 1px 1px 2px #949494;*/
 }
 
-.cheader {
+/*.cheader {
     background-color: white;
 }
-
+*/
 .aboxl {
     margin-bottom: 20px;
+    margin-left: 1px;
     padding: 15px;
     background-color: white;
-    -webkit-border-radius:2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 0px 2px 2px 2px;
+    -moz-border-radius: 0px 2px 2px 2px;
+    border-radius: 0px 2px 2px 2px;
     -moz-box-shadow: 1px 1px 2px #949494;
     -webkit-box-shadow: 1px 1px 2px #949494;
     box-shadow: 1px 1px 2px #949494;
@@ -304,37 +336,8 @@ margin-left: 100px;
     border-bottom:1px solid #888888;
 }
 
-.loc {
-    text-align:right;
-}
-
-.sponsororg {
-    text-alight: left;
-}
-
-.social-tools {
-    display: block;
-    /* position: fixed; */
-    margin-top 90px;
-    height: auto;
-    /* top: 90px; */
-    text-align: center;
-    border-radius: 0;
-    width: 20px;
-    background-color: transparent;
-    max-width: 20px;
-    color: navy;
-    bottom: 50px;
-}
-
-.social-tools .unit {
-    text-align: center;
-}
-
-.social-tools p {
-    font-size:65%;
-    text-align: center;
-    vertical-align: middle;
+.perkbox:hover {
+    background-color: #66FFCC;
 }
 
 .container {
