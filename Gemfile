@@ -9,11 +9,10 @@ gem 'gmaps4rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
   gem "capybara", "~> 2.1.0"
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
