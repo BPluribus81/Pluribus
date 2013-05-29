@@ -32,12 +32,12 @@ class HomeController < ApplicationController
       #else
       #  flash.now[:error] = "Unkown error ocurred, please try again later"
       #end
-      #redirect_to contact_path
-      redirect_to contact_path
+      #redirect_to root_path
+      redirect_to root_path
     else
       flash.now[:error] = @error
       #redirect_to contact_path + "#flash"
-      render 'contact'
+      render 'root'
     end
   end
 
