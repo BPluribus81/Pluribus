@@ -26,7 +26,7 @@ class HomeController < ApplicationController
     @subject = params[:subject]
     @message = params[:message]
     if validate(@sender, @subject, @message)
-      UserMailer.contact(@sender, @subject, @message).deliver
+      ContactForm.contact(@sender, @subject, @message).deliver
       #if request.xhr?
         flash[:success] = "Message sent successfully"
       #else
