@@ -69,7 +69,7 @@ PluribusClean::Application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :domain               => 'pluribusfund.com',
+    # :domain               => 'pluribusfund.com',
     :user_name            => 'brian.whitesides@pluribusfund.com',
     :password             => 'PluribusPass22',
     :authentication       => 'plain',
