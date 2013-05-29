@@ -1,4 +1,5 @@
 class UserMailer < ActionMailer::Base  
+  default :from => "brian.whitesides@pluribusfund.com"
   default :to => "info@pluribusfund.com"
 
   def contact (sender, subject, message, sent_at = Time.now)
