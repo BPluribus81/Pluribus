@@ -1,0 +1,21 @@
+<h1>Send Us an Email!</h1><br/>
+<%= form_tag(contact_email_path, :method => 'post') do %>
+   <div class="field">
+        <%= label_tag "Your email" %>
+        <br />
+        <%= text_field_tag "sender", @sender %>
+    </div>
+    <div class="field">
+        <%= label_tag "Subject" %>
+        <br />
+        <%= text_field_tag "subject", @subject %>
+    </div>
+    <div class="field">
+        <%= label_tag "Message" %>
+        <br />
+        <%= text_area_tag "message", @message %>
+    </div>
+    <div class="action">
+     <%= submit_tag "Send Email" %>
+    </div>
+<% end %>
