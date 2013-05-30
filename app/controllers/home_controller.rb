@@ -15,18 +15,17 @@ class HomeController < ApplicationController
   end
 
   def contact
-    @title = "Contact"
-    @sender = ''
-    @subject = ''
+    @name = ''
+    @email = ''
     @message = ''
   end
 
   def sendmail
-    @sender = params[:sender]
-    @subject = params[:subject]
+    @name = params[:name]
+    @email = params[:email]
     @message = params[:message]
-    if validate(@sender, @subject, @message)
-      ContactForm.contact(@sender, @subject, @message).deliver
+    if validate(@name, @email, @message)
+      ContactForm.contact(@name, @email, @message).deliver
       #if request.xhr?
         flash[:success] = "Message sent successfully"
       #else
@@ -42,15 +41,15 @@ class HomeController < ApplicationController
   end
 
   private
-    def validate(sender, subject, message)
+    def validate(name, email, message)
       @email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-      if sender.blank? || subject.blank? || message.blank?
+      if name.blank? || email.blank? || message.blank?
         @error = "Message not sent: Required information not filled"
         return false
-      elsif subject.length >= 50
-        @error = "Message not sent: Subject must be smaller than 50 characters"
+      elsif name.length >= 40
+        @error = "Message not sent: Name must be smaller than 40 characters"
         return false
-    elsif sender[@email_regex].nil?
+    elsif email[@email_regex].nil?
         @error = "Message not sent: Email not valid"
         return false
       else

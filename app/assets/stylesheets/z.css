@@ -1,3 +1,20 @@
+#stwrapper {
+    display: none;
+}
+
+/*textarea {
+    width: 520px;
+    height: 125px;
+}*/
+
+.testgmapswindow {
+    max-width: 50px;
+}
+
+.section_header {
+    margin-bottom: 35px;
+}
+
 .social-tools {
     display: block;
     min-width: 70px;
@@ -70,6 +87,7 @@ li {
 
 #footer .footer_header {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #footer .container {margin-top: 0px;}
