@@ -30,8 +30,8 @@
                     Join Our Mailing List
                 </h3>
                 <%= form_tag(contact_email_path, :method => 'post') do %>
-                  <%= text_field_tag "sender", @sender, :placeholder => "Your name" %>
-                  <%= text_field_tag "subject", @subject, :placeholder => "Your email" %>
+                  <%= text_field_tag "name", @name, :placeholder => "Your name" %>
+                  <%= text_field_tag "email", @email, :placeholder => "Your email" %>
                   <%= text_area_tag "message", @message, :placeholder => "Message", :rows => "3" %>
                   <div class="action">
                     <%= submit_tag "Send" %>

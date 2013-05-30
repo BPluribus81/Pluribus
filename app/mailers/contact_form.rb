@@ -6,7 +6,7 @@ class ContactForm < ActionMailer::Base
     @email = email
     @message = message
     @sent_at = sent_at.strftime("%B %e, %Y at %H:%M")
-    mail(:subject => subject)
+    mail(:subject => "Email from Pluribus")
   end
 
 end
