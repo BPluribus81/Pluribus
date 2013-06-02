@@ -14,6 +14,7 @@ PluribusClean::Application.routes.draw do
   match '/privacy',  to: 'home#privacy'
   match '/campaigntest', to: 'home#campaigntest'
   match '/contact_email', :to => 'home#sendmail'
+  match '/contact', :to => 'home#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

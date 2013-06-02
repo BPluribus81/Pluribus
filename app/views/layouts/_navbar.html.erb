@@ -34,14 +34,9 @@
                         </a>
                         <div class="dropdown-menu" style="padding: 10px;">
                             <%= form_for("user", :url => user_session_path) do |f| %>
-                            <div><%= f.email_field :email, :placeholder => "email address", :autofocus => true %>
-                            </div>
-
-                            <div>
-                            <%= f.password_field :password, :placeholder => "password" %>
-                            </div>
-
-                            <div><%= f.submit "Sign in" %></div>
+                              <div><%= f.email_field :email, :placeholder => "email address", :autofocus => true %></div>
+                              <div><%= f.password_field :password, :placeholder => "password" %></div>
+                              <div><%= f.submit "Sign in" %></div>
                             <% end %>
                         </div>
                     </li>

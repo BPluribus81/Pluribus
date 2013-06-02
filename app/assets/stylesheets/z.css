@@ -1,14 +1,9 @@
-#stwrapper {
-    display: none;
+.cheader .offset1 {
+    margin-left: 115px;
 }
 
-/*textarea {
-    width: 520px;
-    height: 125px;
-}*/
-
-.testgmapswindow {
-    max-width: 50px;
+#stwrapper {
+    display: none;
 }
 
 .section_header {
@@ -22,11 +17,15 @@
     padding: 5px 0 5px 0;
     /*position: absolute;*/
     height: auto;
-    background-color: white;
+    background-color: transparent;
     bottom: 50px;
     -webkit-border-radius:6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
+}
+
+.campaignmiddlebar {
+    margin-left: 10px;
 }
 
 .campaignrightbar {
@@ -93,7 +92,7 @@ li {
 #footer .container {margin-top: 0px;}
 
 #aboutus { 
-    margin-top: 30px; margin-bottom: 20px;
+    margin-top: 85px; margin-bottom: 45px;
 }
 
 #customtitlebar {

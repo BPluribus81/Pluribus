@@ -151,6 +151,8 @@ logo.png: logo-35c51e724f894c9d4b269119a9c7cce9.png
 logo/index.png: logo-35c51e724f894c9d4b269119a9c7cce9.png
 mango_thumb.jpg: mango_thumb-e19a8a9b5c912da61374242b9e5b85a2.jpg
 mango_thumb/index.jpg: mango_thumb-e19a8a9b5c912da61374242b9e5b85a2.jpg
+market.jpg: market-de4a97748d8859c243143997e6f5af8c.jpg
+market/index.jpg: market-de4a97748d8859c243143997e6f5af8c.jpg
 mini-logo.png: mini-logo-3bdf39b77388e0989d1e4339d2425dbc.png
 mini-logo/index.png: mini-logo-3bdf39b77388e0989d1e4339d2425dbc.png
 mint.jpg: mint-29d2d53ed9d75176c9bd7e65fbf9a0a1.jpg
@@ -215,8 +217,8 @@ water_thumb.jpg: water_thumb-eb05db86883604b54dd08216917fc267.jpg
 water_thumb/index.jpg: water_thumb-eb05db86883604b54dd08216917fc267.jpg
 application.js: application-8fc749d6c9daeb176b0001de4a32d203.js
 application/index.js: application-8fc749d6c9daeb176b0001de4a32d203.js
-application.css: application-6bdc0f11a8ee1268eaa1554fd6b22a4a.css
-application/index.css: application-6bdc0f11a8ee1268eaa1554fd6b22a4a.css
+application.css: application-6651e76b35560ddcbb1d9255a546e338.css
+application/index.css: application-6651e76b35560ddcbb1d9255a546e338.css
 jquery.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 jquery/index.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 fontawesome-webfont.eot: fontawesome-webfont-635909f146e208b3509acdf3b154bf0d.eot
