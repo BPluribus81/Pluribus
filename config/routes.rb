@@ -5,6 +5,7 @@ PluribusClean::Application.routes.draw do
   devise_for :admins
   devise_for :users
   resources :campaigns
+  resources :users
 
   root :to => 'home#index'
 

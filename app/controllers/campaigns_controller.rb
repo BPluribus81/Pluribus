@@ -1,6 +1,9 @@
 class CampaignsController < ApplicationController
   before_filter :authenticate_user!, only: [:edit, :update]
-
+  before_filter only: [:edit, :update] do
+    redirect_to root_path unless current_user.admin?
+  end
+    
   def new
   end
 
@@ -22,4 +25,10 @@ class CampaignsController < ApplicationController
       render 'edit'
     end
   end
+
+  private
+
+    def admin?
+      self.admin == true
+    end
 end
