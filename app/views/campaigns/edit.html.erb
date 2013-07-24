@@ -5,7 +5,6 @@
   <div class="row">
     <div class="span6">
       <h1>Update Campaign</h1><br />
-      <h3>Current User Admin <%= current_user.admin? %>
       <%= form_for(@campaign) do |f| %>
 
       <%= f.label :title %>
@@ -13,6 +12,9 @@
 
       <%= f.label :fundtarget %>
       <%= f.number_field :fundtarget %>
+
+      <%= f.label :campaignlength %>
+      <%= f.number_field :campaignlength %>
 
       <%= f.label :description %>
       <%= f.text_field :description %><br />

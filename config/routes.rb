@@ -16,6 +16,7 @@ PluribusClean::Application.routes.draw do
   match '/campaigntest', to: 'home#campaigntest'
   match '/contact_email', :to => 'home#sendmail'
   match '/contact', :to => 'home#contact'
+  match '/dashboard', :to => 'home#dashboard'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

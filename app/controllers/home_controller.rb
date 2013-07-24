@@ -2,6 +2,10 @@ class HomeController < ApplicationController
   def index
   end
 
+  def dashboard
+    @user = current_user
+  end
+
   def tou
   end
 
@@ -56,5 +60,4 @@ class HomeController < ApplicationController
         return true
       end
     end
-
 end
